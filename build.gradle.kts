@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("com.graphql-java:graphql-java-tools:${Version.graphqlToolsVersion}")
 	implementation("com.graphql-java:graphql-spring-boot-starter:${Version.graphqlVersion}")

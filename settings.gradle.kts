@@ -1,1 +1,1 @@
-rootProject.name = "example"
+rootProject.name = "kotlin-spring-boot-graphql-example"
