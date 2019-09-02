@@ -1,6 +1,24 @@
 # kotlin-spring-boot-graphql-example
 kotlin-spring-boot-graphql-example
 
+book.graphqls
+```graphql
+type Book {
+publicId: ID!,
+title: String,
+author: String
+}
+type Query {
+books(size: Int!):[Book]
+book(publicId: ID!):Book
+}
+type Mutation {
+createBook(title: String!, author: String!):Book
+updateBook(publicId: ID!, title: String!, author: String!):Book
+deleteBook(publicId: ID!): ID
+}
+```
+
 ## Download
 
 ```bash
