@@ -1,0 +1,13 @@
+
+type Book {
+publicId: ID!,
+title: String,
+author: String
+}
+type Query {
+books(count: Int):[Book]
+book(publicId: ID):Book
+}
+type Mutation {
+createBook(title: String!, author: String!):Book
+}
