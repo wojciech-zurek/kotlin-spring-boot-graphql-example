@@ -1,23 +1,54 @@
 # kotlin-spring-boot-graphql-example
 kotlin-spring-boot-graphql-example
 
+## GraphQL Schema
 book.graphqls
 ```graphql
 type Book {
-publicId: ID!,
-title: String,
-author: String
+    publicId: ID!,
+    title: String,
+    author: String
 }
 type Query {
-books(size: Int!):[Book]
-book(publicId: ID!):Book
+    books(size: Int!):[Book]
+    book(publicId: ID!):Book
 }
 type Mutation {
-createBook(title: String!, author: String!):Book
-updateBook(publicId: ID!, title: String!, author: String!):Book
-deleteBook(publicId: ID!): ID
+    createBook(title: String!, author: String!):Book
+    updateBook(publicId: ID!, title: String!, author: String!):Book
+    deleteBook(publicId: ID!): ID
 }
 ```
+
+## GraphQL Endpoint
+```
+/graphql
+```
+Example: http://localhost:8080/graphql
+
+## GraphiQL Endpoint
+```
+/graphiql
+```
+Example: http://localhost:8080/graphiql
+
+More info: https://github.com/graphql/graphiql
+
+## Altair Endpoint
+```
+/altair
+```
+Example: http://localhost:8080/altair
+
+More info: https://github.com/imolorhe/altair
+
+## Voyager Endpoint
+```
+/voyager
+```
+Example: http://localhost:8080/voyager
+
+More info: https://github.com/APIs-guru/graphql-voyager
 
 ## Download
 
